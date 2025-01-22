@@ -317,3 +317,10 @@ input:focus {
 
 .help a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  button {
+    flex: 1 1 80%; 
+  }
+}
