@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,18 +15,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;overflow-x: hidden;
 }
 
 header {
   text-align: center;
   width: 100%;
   max-width: 800px;
-  padding: 20px;
+  padding: 15px;
   background-color: rgba(255, 255, 255, 0);
   color: white;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 header h1 {
@@ -37,9 +35,9 @@ header h1 {
   color: rgba(255, 255, 255, 1);
 }
 
-.page-header p {
+header p {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -49,20 +47,21 @@ header h1 {
 
 .order-top {
   background: linear-gradient(92.74deg, #fd7b46 1.15%, #fe4e9b 98.48%);
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 161px;
   padding: 20px;
   color: rgba(255, 255, 255, 1);
-  border-radius: 8px;
   margin: 0;
 }
 
 h2 {
   width: 200px;
   height: 40px;
-  margin: 10px;
   font-size: 24px;
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
 .row1,
@@ -132,13 +131,24 @@ h2 {
 }
 
 .container {
-  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px; width: 100%;
+  background-color: #FFFFFF; 
+}
+
+form {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .payment-method {
-  width: 760px;
-  background: white;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   padding: 20px;
   text-align: center;
   margin: 0;
@@ -146,18 +156,15 @@ h2 {
 }
 
 .payment-method h2 {
-  width: 260px;
   height: 40px;
-  gap: 0px;
   font-family: Arial;
   font-size: 24px;
   font-weight: 700;
-  line-height: 27.6px;
+  text-align: center;
 }
 
 .method-buttons {
   display: flex;
-  justify-content: space-between;
   gap: 15px;
 }
 
@@ -220,6 +227,8 @@ button:hover {
 }
 
 .card-info {
+  width: 100%;
+  max-width: 800px;
   background: white;
   text-align: center;
   border-radius: 8px;
@@ -237,7 +246,7 @@ button:hover {
 
 .form-inline {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;justify-content: space-between;
   gap: 10px;
 }
 
@@ -245,7 +254,6 @@ label {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  text-align: left;
   color: #555;
   display: block;
   margin-bottom: 5px;
@@ -256,43 +264,35 @@ label {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  display: inline-block;
-}
-
-input:focus {
-  border-color: #fd7b46;
-  box-shadow: 0px 4px 8px rgba(253, 123, 70, 0.2);
-}
-
-.card-info input {
   max-width: 240px;
   display: inline-block;
 }
 
 .buy {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adds spacing above the button */
+  margin-top: 20px;
 }
 
 .buy-now {
   background: linear-gradient(92.74deg, #fd7b46 1.15%, #fe4e9b 98.48%);
   border: none;
-  border-radius: 50px;
+  border-radius: 55px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
   width: 100%;
   max-width: 326px;
-  height: 50px;
-  margin: auto;
+  height: 68px;
 }
 
 
 .buy-now:hover {
-  background: linear-gradient(92.74deg, #fe4e9b 1.15%, #fd7b46 98.48%); 
+  background: linear-gradient(92.74deg, #fe4e9b 1.15%, #fd7b46 98.48%);
 }
 
 
@@ -305,7 +305,8 @@ input:focus {
   font-size: 18px;
   font-weight: 700;
   line-height: 20.7px;
-  text-align: center;margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 
 }
 
@@ -319,8 +320,21 @@ input:focus {
   text-decoration: underline;
 }
 
+
+
 @media (max-width: 768px) {
-  button {
-    flex: 1 1 80%; 
+  .button {
+    flex-wrap: wrap;
+  }
+
+  .buy-now {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .form-inline {
+    display: flex;
+    flex-direction: column;
+    
   }
 }

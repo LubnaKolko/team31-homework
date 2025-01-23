@@ -29,42 +29,45 @@
         </div>
       </div>
     </section>
-    <section class="payment-method">
-      <h2>Payment Method</h2>
-      <div class="method-buttons">
-        <button class="button-selected">
-          <img class="img1" src="cards.png" alt="MasterCard">
-          <p>Credit / Debit</p>
-        </button>
-        <button class="button-right">
-          <img class="img2" src="paypal.png" alt="PayPal">
-          <p>Paypal</p>
-        </button>
+    <form>
+      <section class="payment-method">
+        <h2>Payment Method</h2>
+        <div class="method-buttons">
+          <button class="button-selected">
+            <img class="img1" src="cards.png" alt="MasterCard">
+            <p>Credit / Debit</p>
+          </button>
+          <button class="button-right">
+            <img class="img2" src="paypal.png" alt="PayPal">
+            <p>Paypal</p>
+          </button>
+        </div>
+      </section>
+      <section class="card-info">
+        <h3>Card Info</h3>
+        <div class="form-inline">
+          <div class="card-num">
+            <label for="card-number">Card number</label>
+            <input class="card-number" type="text" placeholder="1234 1234 1234 1234" required />
+          </div>
+          <div class="card-exp">
+            <label for="exp-date">Expiry date</label>
+            <input class="card-date" type="text" placeholder="MM / YY" required />
+          </div>
+          <div class="card-sec">
+            <label for="sec-code">Security code</label>
+            <input class="card-sec" type="text" placeholder="CVV" required />
+          </div>
+        </div>
+
+      </section>
+      <section class="buy">
+        <button type="submit" class="buy-now">Buy now</button>
+      </section>
+      <div class="help">
+        <a href="#"> Need Help?</a>
       </div>
-    </section>
-    <section class="card-info">
-      <h3>Card Info</h3>
-      <form class="form-inline">
-      <div class="card-num">
-        <label for="card-number">Card number</label><br />
-        <input class="card-number" type="text" placeholder="1234 1234 1234 1234" required />
-      </div>
-      <div class="card-exp">
-        <label for="exp-date">Expiry date</label><br />
-        <input class="card-date" type="text" placeholder="MM / YY" required />
-      </div>
-      <div class="card-sec">
-        <label for="sec-code">Security code</label><br />
-        <input class="card-sec" type="text" placeholder="CVV" required />
-      </div>
-      </form>
-    </section>
-    <section class="buy">
-      <button type="submit" class="buy-now">Buy now</button>
-    </section>
-    <div class="help">
-      <a href="#"> Need Help?</a>
-    </div>
+    </form>
   </main>
 </body>
 
