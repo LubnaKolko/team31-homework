@@ -1,2 +1,3 @@
 This is my homework in week 1, exercise 2.
 more text in the file
+additional text
