@@ -1,3 +1,0 @@
-This is the apples file content.
-Hello world
-
