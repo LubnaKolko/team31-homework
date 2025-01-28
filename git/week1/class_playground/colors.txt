@@ -1,3 +1,7 @@
 black
 white
+<<<<<<< HEAD
 blue
+=======
+red
+>>>>>>> 06fa00a0810ef6d68aba0743f05c2b0ef8f82f57
